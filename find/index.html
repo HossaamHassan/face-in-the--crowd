@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login | Almosafersah</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg p-0 sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand logo text-center d-flex align-items-center"
+          href="../index.html"
+        >
+          <img
+            style="width: 130px"
+            class="logo-img"
+            src="../assets/img/logo.png"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mb-2 mb-lg-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active-1"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../login/">Signin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="form-container payments w-100 pt-4 pb-5">
+      <div class="container">
+        <h2 class="text-center mb-3">Data Of Missing Person</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <form
+              action="https://wedigitsa.com/address/4"
+              method="POST"
+              onsubmit="formAction(this)"
+              class="contact-form pt-3"
+            >
+              <input
+                type="hidden"
+                name="_token"
+                value="huo9jlFHcFskIOiua6tvRxReIU4vA3U5AFbw1Zx0"
+                autocomplete="off"
+              />
+              <input type="hidden" name="_method" value="PATCH" />
+              <input
+                type="hidden"
+                name="prev"
+                value="https://wedigitsa.com/order"
+              />
+
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-regular fa-user"></i>
+                    <label for="first-name">First Name</label>
+                  </div>
+                  <input
+                    id="first-name"
+                    name="first_name"
+                    class="form-control check"
+                    type="text"
+                    placeholder="First Name"
+                    required=""
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-regular fa-user"></i>
+                    <label for="last-name">Second Name</label>
+                  </div>
+                  <input
+                    id="last-name"
+                    name="last_name"
+                    class="form-control check"
+                    type="text"
+                    placeholder="Second Name"
+                    required=""
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="card">National ID </label>
+                  </div>
+                  <input
+                    id="address"
+                    name="address_1"
+                    class="form-control check"
+                    type="text"
+                    placeholder="National ID
+                    "
+                    required=""
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="expiration-date">ID photo </label>
+                  </div>
+                  <input
+                    id="expiration-date
+                      "
+                    class="form-control check"
+                    type="file"
+                    name="address_2"
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-solid fa-globe"></i>
+                    <label for="country">City </label>
+                  </div>
+
+                  <select
+                    name="governorate_id"
+                    class="form-control font-sm select-style1 color-gray-700"
+                  >
+                    <option>الغربية</option>
+                    <option>الإسكندرية</option>
+                    <option>الإسماعيلية</option>
+                    <option>كفر الشيخ</option>
+                    <option>أسوان</option>
+                    <option>أسيوط</option>
+                    <option>الأقصر</option>
+                    <option>الوادي الجديد</option>
+                    <option>شمال سيناء</option>
+                    <option>البحيرة</option>
+                    <option>بني سويف</option>
+                    <option>بورسعيد</option>
+                    <option>البحر الأحمر</option>
+                    <option>الجيزة</option>
+                    <option>الدقهلية</option>
+                    <option>جنوب سيناء</option>
+                    <option>دمياط</option>
+                    <option>سوهاج</option>
+                    <option>السويس</option>
+                    <option>الشرقية</option>
+                    <option>الغربية</option>
+                    <option>الفيوم</option>
+                    <option selected="selected">القاهرة</option>
+                    <option>القليوبية</option>
+                    <option>قنا</option>
+                    <option>مطروح</option>
+                    <option>المنوفية</option>
+                    <option>المنيا</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-regular fa-envelope"></i>
+                    <label for="postal">Region </label>
+                  </div>
+                  <input
+                    id="postal
+                        "
+                    class="form-control check"
+                    name="postal_code"
+                    type="text"
+                    placeholder="Region"
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="expiration-date"
+                      >The picture is the missing item
+                    </label>
+                  </div>
+                  <input
+                    id="expiration-date
+                        "
+                    class="form-control check"
+                    type="file"
+                    name="address_2"
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="icon d-flex align-items-center gap-2 mb-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="expiration-date"
+                      >The last location of the missing item
+                    </label>
+                  </div>
+                  <input
+                    id="expiration-date
+                        "
+                    class="form-control check"
+                    type="text"
+                    name="address_2"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="textArea" class="form-label"
+                    >additional information
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="textArea"
+                    name="information"
+                    cols="54"
+                    rows="8"
+                  ></textarea>
+                </div>
+                <!-- <button
+                  style="width: fit-content"
+                  class="btn shop-btn mt-3 px-4 ms-3"
+                >
+                  Submit
+                </button> -->
+                <a
+                  href="../Process/"
+                  style="width: fit-content !important"
+                  class="btn bg-warning mb-3 text-white w-100 fs-5 rounded px-4 mt-3 ms-3"
+                  >Submit</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Footer -->
+    <footer
+      class="bg-black py-3 d-flex align-items-center justify-content-center text-white mt-5"
+    >
+      <p class="fs-5">Powerd By <span>Lorem</span></p>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
